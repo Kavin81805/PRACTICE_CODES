@@ -6,30 +6,29 @@ public class logbas {
         
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("REGISTER FORM");
-        System.out.println("Enter Your Nmae :");
+        System.out.println("REGISTER FORM\n");
+        System.out.print("Enter Your Nmae : ");
         String name = scan.nextLine();
-        System.out.println("Enter Your Emali :");
+        System.out.print("Enter Your Emali : ");
         String emali = scan.nextLine();
-        System.out.println("Enter Your Password :");
+        System.out.print("Enter Your Password : ");
         String pass = scan.nextLine();
         
-        System.out.println("LOGIN FORM");
-        System.out.println("Enter your Email :");
+        System.out.println("\nLOGIN FORM\n");
+        System.out.print("Enter your Email : ");
         String logEmail = scan.nextLine();
-        System.out.println("Enter Your Password :");
+        System.out.print("Enter Your Password : ");
         String logPass = scan.nextLine();
 
         if(name.isEmpty() || emali.isEmpty() || pass.isEmpty()){
-            System.out.println("WARNING : Plaes fill all the reqested details");
+            System.out.println("\nWARNING : Plaes fill all the reqested details\n");
         }
         else if (emali.equals(logEmail) && pass.equals(logPass)) {
-            System.out.println("Login Successful");
-            System.out.println(name + " Welcome to the Web Buddy....");
-            
+            System.out.println("\nWARNING : Login Successful ");
+            System.out.println("\n"+name + " Welcome to the Web Buddy....\n");     
         }
         else{
-            System.out.println("Login failed");
+            System.out.println("\nLogin failed EMAIL OR PASSWORD IS INCORRECT\n");
          }
     }
 }
