@@ -11,7 +11,7 @@ public class logbas {
         String name = scan.nextLine();
         System.out.print("Enter Your Emali : ");
         String emali = scan.nextLine();
-        System.out.print("Enter Your Password : ");
+        System.out.print("Create Your Password : ");
         String pass = scan.nextLine();
         
         System.out.println("\nLOGIN FORM\n");
